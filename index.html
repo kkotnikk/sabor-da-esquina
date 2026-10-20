@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#191b17">
+  <meta name="description" content="Cardápio do Sabor da Esquina. Consulte os pratos, pizzas, porções, caldos, beirutes, lanches e seus preços.">
+  <title>Sabor da Esquina · Cardápio</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/mark.svg">
+  <link rel="preload" as="image" href="./assets/menu-cover.webp">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#menu-body">Ir para os itens</a>
+  <header class="header">
+    <div class="wrap header-bar">
+      <div class="brand"><img src="./assets/mark.svg" width="44" height="44" alt=""><div><p>Sabor da Esquina</p><span>RESTAURANTE & PIZZARIA</span></div></div>
+      <p class="location-label"><span></span> Vila Sabrina, São Paulo</p>
+    </div>
+    <div class="wrap cover">
+      <div class="cover-photo"><img src="./assets/menu-cover.webp" width="1536" height="1024" alt="Pizza de calabresa com cebola e azeitonas"></div>
+      <div class="cover-copy"><p class="eyebrow">SABOR DA ESQUINA</p><h1>CARDÁPIO<span>DA CASA<span class="title-dot">.</span></span></h1></div>
+      <div class="cover-stamp"><span>COMIDA</span><strong>24<span>h</span></strong><span>TODOS OS DIAS</span></div>
+    </div>
+  </header>
+  <main class="wrap menu-shell" id="cardapio">
+    <div class="menu-heading">
+      <p class="menu-caption"><span></span> Cardápio completo</p>
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="menu-search" type="search" placeholder="Buscar prato ou ingrediente" aria-label="Buscar em todo o cardápio" autocomplete="off"></label>
+    </div>
+    <nav class="category-bar" aria-label="Categorias do cardápio"><div class="categories" id="categories"></div></nav>
+    <section class="menu-body" id="menu-body" aria-labelledby="category-title">
+      <div class="category-heading"><div class="category-heading-main"><span class="category-symbol" id="category-symbol" aria-hidden="true"></span><div><h2 id="category-title">Pratos</h2><p id="category-note" hidden></p></div></div><button type="button" class="clear-search" id="clear-search" hidden>Limpar busca</button></div>
+      <p class="sr-only" id="result-status" aria-live="polite"></p>
+      <div id="menu-items"></div>
+      <div class="empty-state" id="no-results" hidden><p>Nenhum item encontrado.</p><button type="button" id="reset-search">Limpar busca</button></div>
+      <noscript><p><a href="./assets/cardapio-original.pdf">Consultar o cardápio em PDF</a></p></noscript>
+    </section>
+  </main>
+  <footer class="wrap"><p class="footer-name">Sabor da Esquina<span>.</span></p><p>Av. Marechal Argolo Ferrão, 83 · Vila Sabrina · São Paulo, SP</p></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
