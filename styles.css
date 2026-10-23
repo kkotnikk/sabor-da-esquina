@@ -72,3 +72,6 @@
  .cover-stamp>span{font-size:4px;letter-spacing:.5px}
 }
 @media(max-width:360px){.cover{min-height:215px}.cover-copy{padding:24px 18px}.cover h1{font-size:54px}.eyebrow{font-size:6px;letter-spacing:1.4px}}
+
+/* Subtle advance-order label. */
+.item-description.item-order-notice{display:inline-block;max-width:100%;margin-top:12px;padding:5px 11px;border:1px solid #b7a578;border-radius:999px;background:transparent;color:#68685b;font-size:12px;font-weight:400;line-height:1.5}
