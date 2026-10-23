@@ -35,3 +35,17 @@
 @media(max-width:900px){.menu-item{gap:24px;padding:24px}.item-name{font-size:27px}.item-prices{padding-left:22px;gap:20px}.item-price strong{font-size:28px}}
 @media(max-width:600px){.menu-item{grid-template-columns:minmax(0,1fr);gap:18px;min-height:0;padding:22px 20px;border-radius:11px}.item-name{font-size:27px}.item-description{font-size:13px;margin-top:8px}.item-prices{width:100%;padding:16px 0 0;border-left:0;border-top:1px solid #dac791;gap:16px 24px}.item-price{flex:0 1 auto;gap:6px}.item-price small{font-size:11px;max-width:110px}.item-price strong{font-size:28px}.item-price .consult-price{font-size:15px}}
 @media(max-width:360px){.menu-item{padding:20px 16px}.item-name{font-size:25px}.item-prices{gap:14px 20px}.item-price strong{font-size:25px}}
+
+/* Editorial section titles, matching the minimalist menu cards. */
+.category-heading{align-items:center;flex-wrap:wrap;gap:16px 24px;padding-bottom:8px;margin-bottom:28px;border-bottom:0}
+.category-heading-main{position:relative;display:flex;align-items:center;gap:26px;flex:1 1 240px;min-width:0;padding-right:12px}
+.category-heading-main::after{content:'';flex:1 0 32px;height:1px;background:#b59039;transform:translateY(9px)}
+.category-heading-main::before{content:'';position:absolute;right:1px;top:calc(50% + 5px);width:8px;height:8px;transform:rotate(45deg);background:#b59039}
+.category-symbol{display:none}
+.category-title-copy{min-width:0;max-width:calc(100% - 58px)}
+.category-heading .category-eyebrow{margin:0 0 9px;color:#987015;font-size:10px;font-weight:400;line-height:1.5;letter-spacing:2.6px;text-transform:uppercase}
+.category-heading h2{font-family:Georgia,'Times New Roman',serif;font-size:48px;font-weight:400;letter-spacing:-1.3px;line-height:1.12;overflow-wrap:break-word}
+.category-heading #category-note{max-width:560px;font-size:13px;line-height:1.55;margin-top:10px;color:#777966}
+.category-heading .clear-search{margin-left:auto}
+@media(max-width:760px){.category-heading{margin-bottom:24px;padding-bottom:4px;gap:14px}.category-heading-main{gap:18px;flex-basis:200px}.category-title-copy{max-width:calc(100% - 50px)}.category-heading h2{font-size:40px;letter-spacing:-1px}.category-heading .category-eyebrow{font-size:8px;letter-spacing:2px;margin-bottom:8px}.category-heading #category-note{font-size:12px;max-width:100%;margin-top:8px}.category-heading-main::after{flex-basis:24px}}
+@media(max-width:360px){.category-heading h2{font-size:35px}.category-heading-main{gap:14px}.category-heading .category-eyebrow{font-size:7.5px;letter-spacing:1.6px}}
