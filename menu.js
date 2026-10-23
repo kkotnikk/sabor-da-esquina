@@ -70,7 +70,7 @@ const pizzaRows = [
 pizzaRows.forEach(([name,g,b,d]) => item('pizzas','Pizzas salgadas',name,d,[['Grande',g],['Broto',b]]));
 [
   ['Banana','Banana, açúcar, canela e leite condensado.'],
-  ['Chocolate','Chocolate, granulado e cereja.'],
+  ['Chocolate','Chocolate e granulado.'],
   ["M&M’s","Chocolate com M&M’s."],
   ['Prestígio','Chocolate e coco ralado.'],
   ['Romeu e Julieta','Goiabada e mussarela.'],
