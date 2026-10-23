@@ -94,7 +94,7 @@ item('pratos','Pratos do dia','Baião de dois','Aos domingos.',[['Pequeno',70],[
 fixed('pratos','Pratos executivos','Espaguete',25);
 fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra a cavalo',40,'2 ovos, arroz, feijão, fritas e salada.');
-fixed('pratos','Pratos executivos','Cubana',40);
+fixed('pratos','Pratos executivos','Cubana',40,'Banana à milanesa, palmito refogado na manteiga, ervilha, bacon, arroz, fritas e presunto.');
 item('pratos','Pratos executivos','Parmegiana','Carne ou frango. Acompanha arroz e fritas.',[['Pequena',70],['Grande',90]],{choices:['Carne','Frango']});
 item('pratos','Pratos executivos','Bacalhau','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de tilápia','',[['Pequeno',45],['Grande',90]]);
