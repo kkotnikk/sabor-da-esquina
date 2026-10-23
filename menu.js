@@ -11,7 +11,6 @@ export const categories = [
   { id: 'beirutes', name: 'Beirutes' },
   { id: 'lanches', name: 'Lanches' },
   { id: 'doces', name: 'Pizzas doces' },
-  { id: 'especiais', name: 'Mais sabores' },
   { id: 'bebidas', name: 'Bebidas' },
 ];
 let sequence = 0;
