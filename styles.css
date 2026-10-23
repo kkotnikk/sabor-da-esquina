@@ -49,3 +49,26 @@
 .category-heading .clear-search{margin-left:auto}
 @media(max-width:760px){.category-heading{margin-bottom:24px;padding-bottom:4px;gap:14px}.category-heading-main{gap:18px;flex-basis:200px}.category-title-copy{max-width:calc(100% - 50px)}.category-heading h2{font-size:42px;letter-spacing:-1px}.category-heading .category-eyebrow{font-size:8px;letter-spacing:2px;margin-bottom:8px}.category-heading #category-note{font-size:12px;max-width:100%;margin-top:8px}.category-heading-main::after{flex-basis:24px}}
 @media(max-width:360px){.category-heading h2{font-size:36px}.category-heading-main{gap:14px}.category-heading .category-eyebrow{font-size:7.5px;letter-spacing:1.6px}}
+
+/* Keep the cover title and opening-hours seal visually separate. */
+.cover{min-height:280px}
+.cover-copy{max-width:78%;padding:34px 36px}
+.cover h1{font-size:96px;line-height:.9;letter-spacing:-1px}
+.cover h1>span{font-size:.76em;margin-top:8px}
+.cover-stamp{width:78px;height:78px;right:24px;bottom:24px;transform:none;box-shadow:none}
+.cover-stamp strong{font-size:34px}
+.cover-stamp>span{font-size:6px;letter-spacing:.8px}
+@media(max-width:760px){
+ .cover{min-height:225px;border-radius:10px}
+ .cover-copy{max-width:100%;padding:24px 22px 28px}
+ .cover-photo{inset:0 0 0 12%}
+ .cover-photo img{object-position:65% center}
+ .cover::after{background:linear-gradient(90deg,#11130ff5 0%,#11130fd9 35%,#11130f68 72%,#11130f25 100%),linear-gradient(0deg,#11130f55,transparent)}
+ .eyebrow{font-size:7px;letter-spacing:1.8px;gap:8px;margin-bottom:30px;max-width:calc(100% - 65px)}
+ .cover h1{font-size:clamp(54px,14vw,76px);line-height:.9;letter-spacing:-.8px}
+ .cover h1>span{font-size:.76em;line-height:1;margin-top:10px;letter-spacing:-.4px}
+ .cover-stamp{top:14px;right:14px;bottom:auto;width:54px;height:54px}
+ .cover-stamp strong{font-size:25px;margin:2px 0}
+ .cover-stamp>span{font-size:4px;letter-spacing:.5px}
+}
+@media(max-width:360px){.cover{min-height:215px}.cover-copy{padding:24px 18px}.cover h1{font-size:54px}.eyebrow{font-size:6px;letter-spacing:1.4px}}
