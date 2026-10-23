@@ -9,6 +9,13 @@
   <link rel="icon" type="image/svg+xml" href="./assets/mark.svg">
   <link rel="preload" as="image" href="./assets/menu-cover.webp">
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .contact-links{display:flex;flex-wrap:wrap;gap:10px;padding-top:14px;padding-bottom:2px}
+    .contact-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 16px;border:1px solid #ffffff24;border-radius:7px;background:var(--dark-panel);color:var(--cream);text-decoration:none;font-size:12px;line-height:1.4;transition:border-color .2s,background .2s}
+    .contact-link svg{width:19px;height:19px;color:var(--gold)}
+    .contact-link:hover{border-color:var(--gold);background:#303429}
+    @media(max-width:760px){.contact-links{gap:8px;padding-top:12px}.contact-link{flex:1;padding:10px 12px;font-size:11px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#menu-body">Ir para os itens</a>
@@ -22,6 +29,10 @@
       <div class="cover-copy"><p class="eyebrow">SABOR DA ESQUINA</p><h1>CARDÁPIO<span>DA CASA<span class="title-dot">.</span></span></h1></div>
       <div class="cover-stamp"><span>COMIDA</span><strong>24<span>h</span></strong><span>TODOS OS DIAS</span></div>
     </div>
+    <nav class="wrap contact-links" aria-label="Contato e redes sociais">
+      <a class="contact-link" href="https://www.instagram.com/_sabordaesquina_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Sabor da Esquina: @_sabordaesquina_"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@_sabordaesquina_</span></a>
+      <a class="contact-link" href="https://wa.me/5511963231517" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp: (11) 96323-1517"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8A8.5 8.5 0 1 1 20.5 11.6Z"/><path d="M8.5 7.5c-.6 0-1.2.7-1.2 1.6 0 2.5 4 6.5 6.6 6.5.9 0 1.6-.6 1.6-1.2l-2.1-1.2-.9.8a6.5 6.5 0 0 1-2.8-2.8l.8-.9-1.2-2.8Z"/></svg><span>WhatsApp</span></a>
+    </nav>
   </header>
   <main class="wrap menu-shell" id="cardapio">
     <div class="menu-heading">
