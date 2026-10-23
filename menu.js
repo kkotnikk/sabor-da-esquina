@@ -68,6 +68,7 @@ const pizzaRows = [
   ['Batatosa',65,45,'Batata, mussarela, cheddar e bacon.'],
 ];
 pizzaRows.forEach(([name,g,b,d]) => item('pizzas','Pizzas salgadas',name,d,[['Grande',g],['Broto',b]]));
+fixed('pizzas','Pizzas salgadas','Barbecue',75,'Frango desfiado, catupiry, bacon e barbecue.');
 [
   ['Banana','Banana, açúcar, canela e leite condensado.'],
   ['Chocolate','Chocolate e granulado.'],
@@ -120,7 +121,6 @@ item('caldos','Caldos','Mocotó em pedaço','',[['Porção',35]]);
  ['X-bacon',20],['X-burger',20],['X-calabresa',20],['X-egg',20],['X-salada',20],['X-tudo',30],['X-churrasco',30],
 ].forEach(([n,p])=>item('lanches','Lanches',n,'',[['Unidade',p]]));
 item('especiais','Mais sabores','Hot dog','Salsicha ao molho, catupiry e batata palha.',[['Consultar',null]]);
-item('especiais','Mais sabores','Molho barbecue','Frango desfiado, catupiry, bacon e barbecue.',[['Tamanho a confirmar',75]]);
 item('especiais','Mais sabores','Strogonoff','Strogonoff de frango e batata palha.',[['Tamanho a confirmar',90]]);
 item('bebidas','Bebidas','Bebidas em geral','Refrigerantes, sucos, cervejas e destilados. Consulte as opções, tamanhos e valores.',[['Consultar',null]]);
 
