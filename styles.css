@@ -18,3 +18,20 @@
 
 /* Advance-order availability must remain visible on the product card. */
 .item-order-notice{display:block;margin-top:12px;padding:10px 12px;border-left:3px solid #9b6810;border-radius:4px;background:#f8e8bf;color:#684407;font-size:13px;font-weight:700;line-height:1.5}
+
+/* Minimalist cards: descriptive copy and unboxed prices. */
+.menu-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+.menu-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:32px;min-height:144px;padding:26px 30px;border:1px solid #cdb578;border-radius:14px;box-shadow:none}
+.item-copy{min-width:0}
+.item-name{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:700;letter-spacing:-.7px;line-height:1.2;overflow-wrap:break-word}
+.item-description{font-size:14px;line-height:1.65;margin-top:10px;color:#747566}
+.item-context{margin-bottom:10px}
+.item-prices{width:auto;max-width:100%;margin:0;padding:8px 0 8px 28px;border-left:1px solid #dac791;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:24px}
+.item-price{min-height:0;min-width:0;padding:0;border:0;border-radius:0;background:none;gap:8px}
+.item-price small{font-size:12px;color:#777668;max-width:140px}
+.item-price strong{font-family:Georgia,'Times New Roman',serif;font-size:32px;font-weight:400;letter-spacing:-1px;line-height:1.15;color:#987015}
+.item-price .consult-price{font-family:Esquina,Arial,sans-serif;font-size:16px;letter-spacing:0;color:#777668}
+.item-order-notice{font-size:13px;color:#684407}
+@media(max-width:900px){.menu-item{gap:24px;padding:24px}.item-name{font-size:27px}.item-prices{padding-left:22px;gap:20px}.item-price strong{font-size:28px}}
+@media(max-width:600px){.menu-item{grid-template-columns:minmax(0,1fr);gap:18px;min-height:0;padding:22px 20px;border-radius:11px}.item-name{font-size:27px}.item-description{font-size:13px;margin-top:8px}.item-prices{width:100%;padding:16px 0 0;border-left:0;border-top:1px solid #dac791;gap:16px 24px}.item-price{flex:0 1 auto;gap:6px}.item-price small{font-size:11px;max-width:110px}.item-price strong{font-size:28px}.item-price .consult-price{font-size:15px}}
+@media(max-width:360px){.menu-item{padding:20px 16px}.item-name{font-size:25px}.item-prices{gap:14px 20px}.item-price strong{font-size:25px}}
