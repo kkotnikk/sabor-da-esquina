@@ -107,7 +107,7 @@ fixed('pratos','Peixes','Tilápia inteira',120,'Somente sob encomenda antecipada
  ['Azeitona',20],['Batata frita',25],['Calabresa',40],['Contra filé na tábua',85],['Costela ao molho',45],
  ['Filé de merluza',65],['Frango a passarinho',40],['Galinha ao molho',35],['Mandioca',35],['Ovo de codorna',30],
  ['Porquinho',65],['Salame',50],['Filé de tilápia',65],['Provolone',85],['Camarão',90],['Picanha',100],
- ['Carne seca com mandioca',90],['Bolinho de costela · 6 unidades',30],['Tripa',30],['Torresmo',50],['Cheddar e bacon',75],
+ ['Carne seca com mandioca',90],['Bolinho de costela · 6 unidades',30],['Tripa',30],['Torresmo',50],['Fritas com cheddar e bacon',75],
 ].forEach(([n,p])=>item('porcoes','Porções',n,'',[['Porção',p]]));
 item('caldos','Caldos','Carne','',[['Porção',20]]);
 item('caldos','Caldos','Mocotó','',[['Pequeno',20],['Grande',30]]);
