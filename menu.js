@@ -87,6 +87,7 @@ item('pratos','Pratos do dia','Feijoada','Quartas e sábados.',[['Pequena',50],[
 fixed('pratos','Pratos do dia','Macarrão com galinha caipira',25,'Quinta-feira.',{ days: [4] });
 fixed('pratos','Pratos do dia','Frango assado',25,'Quinta-feira.',{ days: [4] });
 fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,'Sexta-feira. Tilápia ou merluza.',{ days: [5] });
+item('pratos','Pratos do dia','Bacalhau','Sexta-feira. Consultar se disponível.',[['Pequeno',45],['Grande',90]],{days:[5]});
 item('pratos','Pratos do dia','Baião de dois','Aos domingos. Acompanha costela ou bisteca.',[['Pequeno',70],['Grande',95]],{days:[0]});
 [
  ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],['Contra filé',30],['Rabada',35],
@@ -102,7 +103,6 @@ item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande
 item('pratos','Pratos executivos','Picanha brasileira','',[['2 pessoas',120],['4 pessoas',240]]);
 fixed('pratos','Peixes','Tilápia inteira',120,'Sob encomenda antecipada',{ advanceOrder: true });
 item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]]);
-item('pratos','Pratos promocionais','Bacalhau','',[['Consultar',null]]);
 [
  ['Azeitona',20],['Batata frita',25],['Calabresa',40],['Contra filé na tábua',85],['Costela ao molho',45],
  ['Filé de merluza',65],['Frango a passarinho',40],['Galinha ao molho',35],['Mandioca',35],['Ovo de codorna',30],
