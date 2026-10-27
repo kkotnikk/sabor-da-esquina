@@ -99,7 +99,7 @@ item('pratos','Pratos executivos','Parmegiana','Carne ou frango. Acompanha arroz
 item('pratos','Pratos executivos','Bacalhau','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de tilápia','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de merluza','',[['Pequeno',45],['Grande',90]]);
-item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande',120]]);
+item('pratos','Pratos executivos','Muqueca de peixe','',[['Pequena',60],['Grande',120]]);
 item('pratos','Pratos executivos','Picanha brasileira','',[['2 pessoas',120],['4 pessoas',240]]);
 fixed('pratos','Peixes','Tilápia inteira',120,'Sob encomenda antecipada',{ advanceOrder: true });
 item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]]);
