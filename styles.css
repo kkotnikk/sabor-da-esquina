@@ -75,3 +75,6 @@
 
 /* Subtle advance-order label. */
 .item-description.item-order-notice{display:inline-block;max-width:100%;margin-top:12px;padding:5px 11px;border:1px solid #b7a578;border-radius:999px;background:transparent;color:#68685b;font-size:12px;font-weight:400;line-height:1.5}
+
+/* Give long mobile section titles enough room and keep words intact. */
+@media(max-width:760px){.category-heading-main{flex:1 1 100%;width:100%;padding-right:0}.category-title-copy{flex:1;max-width:100%;width:100%}.category-heading-main::before,.category-heading-main::after{display:none}.category-heading h2{font-size:clamp(30px,8vw,42px);line-height:1.15;overflow-wrap:normal;word-break:normal}.category-heading .clear-search{margin-left:0}}
