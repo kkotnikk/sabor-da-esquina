@@ -96,13 +96,13 @@ fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra a cavalo',40,'2 ovos, arroz, feijão, fritas e salada.');
 fixed('pratos','Pratos executivos','Cubana',40,'Banana à milanesa, palmito refogado na manteiga, ervilha, bacon, arroz, fritas e presunto.');
 item('pratos','Pratos executivos','Parmegiana','Carne ou frango. Acompanha arroz e fritas.',[['Pequena',70],['Grande',90]],{choices:['Carne','Frango']});
-item('pratos','Pratos executivos','Bacalhau','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de tilápia','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de merluza','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande',120]]);
 item('pratos','Pratos executivos','Picanha brasileira','',[['2 pessoas',120],['4 pessoas',240]]);
 fixed('pratos','Peixes','Tilápia inteira',120,'Sob encomenda antecipada',{ advanceOrder: true });
 item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]]);
+item('pratos','Pratos promocionais','Bacalhau','',[['Consultar',null]]);
 [
  ['Azeitona',20],['Batata frita',25],['Calabresa',40],['Contra filé na tábua',85],['Costela ao molho',45],
  ['Filé de merluza',65],['Frango a passarinho',40],['Galinha ao molho',35],['Mandioca',35],['Ovo de codorna',30],
