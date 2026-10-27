@@ -52,7 +52,7 @@ const pizzaRows = [
   ['Napolitana',53,38,'Mussarela, rodelas de tomate e parmesão.'],
   ['Palmito',53,38,'Palmito com mussarela ou catupiry.'],
   ['Peperoni',65,46,'Peperoni com mussarela ou catupiry.'],
-  ['Piruana',58,40,'Atum sólido, palmito, ervilha e provolone.'],
+  ['Peruana',58,40,'Atum sólido, palmito, ervilha e provolone.'],
   ['Portuguesa',58,41,'Presunto, mussarela, ovo, ervilha e cebola.'],
   ['Primavera',58,41,'Atum, palmito, ervilha e mussarela.'],
   ['Provolone',58,40,'Provolone e tomate.'],
