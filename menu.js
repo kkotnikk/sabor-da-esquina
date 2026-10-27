@@ -87,7 +87,7 @@ item('pratos','Pratos do dia','Feijoada','Quartas e sábados.',[['Pequena',50],[
 fixed('pratos','Pratos do dia','Macarrão com galinha caipira',25,'Quinta-feira.',{ days: [4] });
 fixed('pratos','Pratos do dia','Frango assado',25,'Quinta-feira.',{ days: [4] });
 fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,'Sexta-feira.',{ days: [5] });
-item('pratos','Pratos do dia','Baião de dois','Aos domingos.',[['Pequeno',70],['Grande',95]],{days:[0]});
+item('pratos','Pratos do dia','Baião de dois','Aos domingos. Acompanha costela ou bisteca.',[['Pequeno',70],['Grande',95]],{days:[0]});
 [
  ['Calabresa',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],['Contra filé',30],['Rabada',35],
 ].forEach(([n,p])=>fixed('pratos','Pratos comerciais',n,p));
