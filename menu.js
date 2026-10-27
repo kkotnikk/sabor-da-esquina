@@ -102,7 +102,6 @@ item('pratos','Pratos executivos','Filé de merluza','',[['Pequeno',45],['Grande
 item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande',120]]);
 item('pratos','Pratos executivos','Picanha brasileira','',[['2 pessoas',120],['4 pessoas',240]]);
 fixed('pratos','Peixes','Tilápia inteira',120,'Sob encomenda antecipada',{ advanceOrder: true });
-['Calabresa com ovo','Bisteca','Linguiça com ovo','Filé de frango'].forEach(n=>item('pratos','Pratos promocionais',n,'',[['Consultar',null]]));
 [
  ['Azeitona',20],['Batata frita',25],['Calabresa',40],['Contra filé na tábua',85],['Costela ao molho',45],
  ['Filé de merluza',65],['Frango a passarinho',40],['Galinha ao molho',35],['Mandioca',35],['Ovo de codorna',30],
