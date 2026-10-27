@@ -81,7 +81,6 @@ item('doces','Pizzas doces especiais','Choconana','Banana cortada e chocolate br
 item('doces','Pizzas doces especiais','Sonho de Valsa','Bombom picado, chocolate ao leite e leite condensado.',[['Tamanho a confirmar',90]]);
 
 fixed('pratos','Pratos do dia','Virado à paulista',45,'Segunda-feira.',{ days: [1] });
-fixed('pratos','Pratos do dia','Linguiça com ovo',45,'Segunda-feira.',{ days: [1] });
 fixed('pratos','Pratos do dia','Bife a rolê',40,'Terça-feira.',{ days: [2] });
 item('pratos','Pratos do dia','Dobradinha','Terça-feira.',[['Média',40],['Grande',55]],{days:[2]});
 item('pratos','Pratos do dia','Feijoada','Quartas e sábados.',[['Pequena',50],['Média',65],['Grande',85]],{days:[3,6]});
@@ -103,6 +102,7 @@ item('pratos','Pratos executivos','Filé de merluza','',[['Pequeno',45],['Grande
 item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande',120]]);
 item('pratos','Pratos executivos','Picanha brasileira','',[['2 pessoas',120],['4 pessoas',240]]);
 fixed('pratos','Peixes','Tilápia inteira',120,'Sob encomenda antecipada',{ advanceOrder: true });
+item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]]);
 [
  ['Azeitona',20],['Batata frita',25],['Calabresa',40],['Contra filé na tábua',85],['Costela ao molho',45],
  ['Filé de merluza',65],['Frango a passarinho',40],['Galinha ao molho',35],['Mandioca',35],['Ovo de codorna',30],
