@@ -125,8 +125,14 @@ item('caldos','Caldos','Mocotó em pedaço','',[['Porção',35]]);
  ["Beirute de picanha",90,"Alface, tomate, maionese, queijo prato, presunto e ovo, com picanha cortada."],
 ].forEach(([n,p,d])=>item('beirutes','Beirutes',n,d,[['Unidade',p]]));
 [
- ['X-bacon',20],['X-burger',20],['X-calabresa',20],['X-egg',20],['X-salada',20],['X-tudo',30],['X-churrasco',30],
-].forEach(([n,p])=>item('lanches','Lanches',n,'',[['Unidade',p]]));
+ ["X-bacon",20,"Hambúrguer, maionese, queijo prato, bacon, alface e tomate."],
+ ["X-burger",20,"Hambúrguer, maionese e queijo prato."],
+ ["X-calabresa",20,"Pão francês, calabresa fatiada, queijo prato, maionese e vinagrete (tomate e cebola)."],
+ ["X-egg",20,"Hambúrguer, ovo, maionese, queijo prato, alface e tomate."],
+ ["X-salada",20,"Hambúrguer, maionese, queijo prato, alface e tomate."],
+ ["X-tudo",30,"Hambúrguer, maionese, queijo prato, presunto, ovo, calabresa fatiada, bacon, alface e tomate."],
+ ["X-churrasco",30,"Pão francês e vinagrete (tomate e cebola)."],
+].forEach(([n,p,d])=>item('lanches','Lanches',n,d,[['Unidade',p]]));
 item('bebidas','Bebidas','Bebidas em geral','Refrigerantes, sucos, cervejas e destilados. Consulte as opções, tamanhos e valores.',[['Consultar',null]]);
 
 export const money = value => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(value);
