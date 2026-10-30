@@ -90,9 +90,11 @@ fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,'Sexta-f
 item('pratos','Pratos do dia','Bacalhau','Sexta-feira. Consultar se disponível.',[['Pequeno',45],['Grande',90]],{days:[5]});
 item('pratos','Pratos do dia','Baião de dois','Aos domingos. Acompanha costela ou bisteca.',[['Pequeno',70],['Grande',95]],{days:[0]});
 [
- ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],['Contra filé',30],['Rabada',35],
+ ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],
 ].forEach(([n,p])=>fixed('pratos','Pratos comerciais',n,p));
 fixed('pratos','Pratos comerciais','Espaguete',25);
+fixed('pratos','Pratos executivos','Contra filé',30);
+fixed('pratos','Pratos executivos','Rabada',35);
 fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra a cavalo',40,'2 ovos, arroz, feijão, fritas e salada.');
 fixed('pratos','Pratos executivos','Cubana',40,'Banana à milanesa, palmito refogado na manteiga, ervilha, bacon, arroz, fritas e presunto.');
