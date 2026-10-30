@@ -112,10 +112,28 @@ item('pratos','Pratos executivos','Picanha brasileira',"Picanha na tábua com mo
 fixed('pratos','Peixes','Tilápia inteira',120,'Sob encomenda antecipada',{ advanceOrder: true });
 item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]]);
 [
- ['Azeitona',20],['Frios',70],['Batata frita',25],['Calabresa',40],['Contra filé na tábua',85],['Costela ao molho',45],
- ['Filé de merluza',65],['Frango a passarinho',40],['Galinha ao molho',35,'Acompanha arroz, feijão e salada.'],['Mandioca',35],['Ovo de codorna',30],
- ['Porquinho',65],['Salame',50],['Filé de tilápia',65],['Provolone à milanesa',85],['Camarão à milanesa',90],['Picanha',100],
- ['Carne seca com mandioca',90],['Bolinho de costela · 6 unidades',30],['Tripa',30],['Torresmo',50],['Fritas com cheddar e bacon',65],
+ ["Azeitona",20,"Azeitona em conserva."],
+ ["Frios",70,"Frios variados: ovo de codorna, azeitona, salame, presunto, queijo, entre outros."],
+ ["Batata frita",25,"Acompanha sachês e molhos da casa."],
+ ["Calabresa",40,"Calabresa fatiada.\nAcompanha molhos da casa e pão."],
+ ["Contra filé na tábua",85,"Contrafilé cortado e acebolado, servido na tábua ou para viagem.\nAcompanha molhos da casa, vinagrete e pão."],
+ ["Costela ao molho",45,"4 pedaços de costela ao molho com batata cozida.\nÉ possível acrescentar pedaços, com alteração no preço."],
+ ["Filé de merluza",65,"Filé à milanesa, frito.\nAcompanha molhos da casa e limão."],
+ ["Frango a passarinho",40,"Frango temperado e frito.\nAcompanha molhos da casa, limão e pão."],
+ ["Galinha ao molho",35,"3 pedaços de galinha caipira ao molho.\nÉ possível acrescentar pedaços, com alteração no preço."],
+ ["Mandioca",35,"Mandioca frita com molhos da casa."],
+ ["Ovo de codorna",30,"Ovos de codorna em conserva com pimentão."],
+ ["Porquinho",65,"Pedaços de porquinho à milanesa ou filé frito.\nAcompanha molhos da casa e limão."],
+ ["Salame",50,"Salame fatiado com limão."],
+ ["Filé de tilápia",65,"Filé de peixe frito.\nAcompanha molhos da casa e limão."],
+ ["Provolone à milanesa",85,"Provolone à milanesa, frito.\nAcompanha molhos da casa."],
+ ["Camarão à milanesa",90,"Camarão à milanesa, frito.\nAcompanha molhos da casa e limão."],
+ ["Picanha",100,"Picanha cortada e acebolada, servida na tábua ou para viagem.\nAcompanha vinagrete, molhos da casa e pão."],
+ ["Carne seca com mandioca",90,"Carne seca desfiada ou em cubos com mandioca, servida na tábua ou para viagem.\nAcompanha molhos da casa, vinagrete e pão."],
+ ["Bolinho de costela · 6 unidades",30,"Bolinhos à milanesa, fritos.\nAcompanham molho da casa."],
+ ["Tripa",30,"Tripas cortadas e fritas."],
+ ["Torresmo",50,"5 unidades cortadas, com limão."],
+ ["Fritas com cheddar e bacon",65,""],
 ].forEach(([n,p,d=''])=>item('porcoes','Porções',n,d,[['Porção',p]]));
 item('caldos','Caldos','Mocotó',"Somente o caldo do mocotó.\nPão.",[['Pequeno',20],['Grande',30]]);
 item('caldos','Caldos','Verde',"Calabresa, bacon, couve e espinafre.\nPão.",[['Pequeno',20],['Grande',30]]);
