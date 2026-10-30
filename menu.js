@@ -139,7 +139,7 @@ item('caldos','Caldos','Mocotó em pedaço',"Pedaços de mocotó com caldo.\nPã
  ["X-egg",20,"Hambúrguer, ovo, maionese, queijo prato, alface e tomate."],
  ["X-salada",20,"Hambúrguer, maionese, queijo prato, alface e tomate."],
  ["X-tudo",30,"Hambúrguer, maionese, queijo prato, presunto, ovo, calabresa fatiada, bacon, alface e tomate."],
- ["X-churrasco",30,"Pão francês, contrafilé cortado, queijo, maionese e vinagrete (tomate e cebola)."],
+ ["X-churrasco",30,"Pão francês, contrafilé cortado, queijo prato, maionese e vinagrete (tomate e cebola)."],
 ].forEach(([n,p,d])=>item('lanches','Lanches',n,d,[['Unidade',p]]));
 item('bebidas','Bebidas','Bebidas em geral','Refrigerantes, sucos, cervejas e destilados. Consulte as opções, tamanhos e valores.',[['Consultar',null]]);
 
