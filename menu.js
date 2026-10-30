@@ -90,7 +90,7 @@ fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-f
 item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Arroz, carne seca desfiada, queijo coalho e torresmo.\nAcompanha bisteca ou costela.",[['Pequeno',70],['Grande',95]],{days:[0]});
 [
  ["Calabresa",25,"Acompanha arroz, feijão, fritas e salada."],
- ["Bisteca",25,""],
+ ["Bisteca",25,"Acompanha arroz, feijão, fritas e salada."],
  ["Costela",25,"Costela ao molho com batata cozida.\nAcompanha arroz, feijão e salada."],
  ["Fígado",25,"Acompanha arroz, feijão, fritas e salada."],
  ["Galinha caipira",25,"Galinha caipira ao molho com batata cozida.\nAcompanha arroz, feijão e salada."],
