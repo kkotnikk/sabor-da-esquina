@@ -1,4 +1,4 @@
-import { categories, money, filterMenu } from './menu.js?v=20261030-organizado';
+import { categories, money, filterMenu } from './menu.js?v=20261030-comerciais';
 
 const $ = id => document.getElementById(id);
 const escape = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
@@ -53,7 +53,7 @@ function renderMenu() {
   $('no-results').hidden = result.length > 0;
   $('result-status').textContent = `${result.length} ${result.length === 1 ? 'item encontrado' : 'itens encontrados'}.`;
   $('categories').querySelectorAll('[data-category]').forEach(button => button.setAttribute('aria-pressed', String(!query && button.dataset.category === category)));
-  $('menu-items').innerHTML = groups.map(group => `<section class="menu-group" aria-label="${escape(group)}">${showGroupTitle ? `<h3 class="group-title"><span>${escape(group)}</span></h3>` : ''}<div class="menu-grid">${result.filter(item => item.group === group).map(item => `<article class="menu-item" aria-labelledby="name-${item.id}"><div class="item-copy">${query ? `<p class="item-context">${escape(categories.find(entry => entry.id === item.category).name)} · ${escape(item.group)}</p>` : ''}<div class="item-title-row"><${itemTag} id="name-${item.id}" class="item-name">${escape(item.name)}</${itemTag}>${dishDay(item) ? `<span class="item-weekday">${escape(dishDay(item))}</span>` : ''}</div>${dishDescription(item) ? `<p class="item-description${item.advanceOrder ? ' item-order-notice' : ''}">${escape(dishDescription(item))}</p>` : ''}</div><div class="item-prices">${priceHTML(item)}</div></article>`).join('')}</div></section>`).join('');
+  $('menu-items').innerHTML = groups.map(group => `<section class="menu-group" aria-label="${escape(group)}">${showGroupTitle ? `<h3 class="group-title"><span>${escape(group)}</span></h3>` : ''}${group === 'Pratos comerciais' ? '<p class="group-note">Qualquer acréscimo ao prato deve ser informado na hora do pedido.</p>' : ''}<div class="menu-grid">${result.filter(item => item.group === group).map(item => `<article class="menu-item" aria-labelledby="name-${item.id}"><div class="item-copy">${query ? `<p class="item-context">${escape(categories.find(entry => entry.id === item.category).name)} · ${escape(item.group)}</p>` : ''}<div class="item-title-row"><${itemTag} id="name-${item.id}" class="item-name">${escape(item.name)}</${itemTag}>${dishDay(item) ? `<span class="item-weekday">${escape(dishDay(item))}</span>` : ''}</div>${dishDescription(item) ? `<p class="item-description${item.advanceOrder ? ' item-order-notice' : ''}">${escape(dishDescription(item))}</p>` : ''}</div><div class="item-prices">${priceHTML(item)}</div></article>`).join('')}</div></section>`).join('');
 }
 
 $('categories').addEventListener('click', event => {
