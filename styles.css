@@ -85,3 +85,5 @@
 @media(max-width:600px){.item-title-row{gap:10px 12px}.item-weekday{padding-left:12px;font-size:12px}}
 
 .item-description{white-space:pre-line}
+
+.group-note{margin:-4px 0 18px;color:#747566;font-size:13px;line-height:1.6}
