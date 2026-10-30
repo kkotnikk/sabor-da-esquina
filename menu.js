@@ -114,9 +114,16 @@ item('caldos','Caldos','Verde','',[['Pequeno',20],['Grande',30]]);
 item('caldos','Caldos','Sururu','',[['Pequeno',20],['Grande',35]]);
 item('caldos','Caldos','Mocotó em pedaço','',[['Porção',35]]);
 [
- ['Calabresa',40],['Contra filé',65],['Filé de frango',45],['Filé de frango cheddar',50],['Lombo',55],
- ['Tradicional',40],['Beirute de hambúrguer',45],['À moda da casa',65],['Beirute de picanha',90],
-].forEach(([n,p])=>item('beirutes','Beirutes',n,'',[['Unidade',p]]));
+ ["Calabresa",40,"Alface, tomate, maionese, queijo prato, presunto e ovo, com calabresa fatiada."],
+ ["Contra filé",65,"Alface, tomate, maionese, queijo prato, presunto e ovo, com contrafilé cortado."],
+ ["Filé de frango",45,"Alface, tomate, maionese, queijo prato, presunto e ovo, com filé de frango cortado."],
+ ["Filé de frango cheddar",50,"Alface, tomate, maionese, queijo prato, presunto e ovo, com filé de frango cortado e cheddar."],
+ ["Lombo",55,"Alface, tomate, maionese, queijo prato, presunto e ovo, com lombo canadense cortado."],
+ ["Tradicional",40,"Alface, tomate, maionese, queijo prato, presunto e ovo."],
+ ["Beirute de hambúrguer",45,"Alface, tomate, maionese, queijo prato, presunto e ovo, com 4 hambúrgueres."],
+ ["À moda da casa",65,"Alface, tomate, maionese, queijo prato, presunto e ovo, com ervilha, palmito e bacon."],
+ ["Beirute de picanha",90,"Alface, tomate, maionese, queijo prato, presunto e ovo, com picanha cortada."],
+].forEach(([n,p,d])=>item('beirutes','Beirutes',n,d,[['Unidade',p]]));
 [
  ['X-bacon',20],['X-burger',20],['X-calabresa',20],['X-egg',20],['X-salada',20],['X-tudo',30],['X-churrasco',30],
 ].forEach(([n,p])=>item('lanches','Lanches',n,'',[['Unidade',p]]));
