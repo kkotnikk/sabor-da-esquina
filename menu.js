@@ -80,25 +80,25 @@ fixed('pizzas','Pizzas salgadas','Hot dog',65,'Salsicha ao molho, catupiry e bat
 item('doces','Pizzas doces especiais','Choconana','Banana cortada e chocolate branco.',[['Tamanho a confirmar',80]]);
 item('doces','Pizzas doces especiais','Sonho de Valsa','Bombom picado, chocolate ao leite e leite condensado.',[['Tamanho a confirmar',90]]);
 
-fixed('pratos','Pratos do dia','Virado à paulista',45,"Segunda-feira. Arroz, couve, banana frita, torresmo, linguiça toscana, ovo, bisteca e tutu de feijão.",{ days: [1] });
-fixed('pratos','Pratos do dia','Bife a rolê',40,"Terça-feira. Bife enrolado ao molho com batata, cenoura, bacon e calabresa cortados. Acompanha purê de batata, arroz, feijão e salada.",{ days: [2] });
-item('pratos','Pratos do dia','Dobradinha',"Terça-feira. Calabresa, bucho bovino, costelinha e feijão branco. Acompanha arroz e salada.",[['Média',40],['Grande',55]],{days:[2]});
-item('pratos','Pratos do dia','Feijoada',"Quartas e sábados. Acompanha arroz, couve, bisteca e torresmo. Feijão com costelinha de porco, calabresa e carne seca. Caipirinha pedida à parte.",[['Pequena',50],['Média',65],['Grande',85]],{days:[3,6]});
-fixed('pratos','Pratos do dia','Macarrão com galinha caipira',25,"Quinta-feira. Macarrão à bolonhesa ou alho e óleo, com galinha caipira ao molho e batata cozida.",{ days: [4] });
-fixed('pratos','Pratos do dia','Frango assado',25,"Quinta-feira. Acompanha arroz, feijão, fritas e salada. Para trocar por macarrão, avise ao fazer o pedido.",{ days: [4] });
-fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-feira. Tilápia ou merluza à milanesa, coberta com molho de camarão. Acompanha purê de batata, arroz, feijão e salada.",{ days: [5] });
-item('pratos','Pratos do dia','Bacalhau',"Sexta-feira. Verificar no dia a disponibilidade. Bacalhau em postas com leguminosas. Acompanha arroz, feijão e salada.",[['Pequeno',45],['Grande',90]],{days:[5]});
-item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Carne seca desfiada, torresmo, queijo coalho e arroz. Acompanha bisteca ou costela.",[['Pequeno',70],['Grande',95]],{days:[0]});
+fixed('pratos','Pratos do dia','Virado à paulista',45,"Segunda-feira. Arroz, tutu de feijão, couve e banana frita.\nBisteca, linguiça toscana, ovo e torresmo.",{ days: [1] });
+fixed('pratos','Pratos do dia','Bife a rolê',40,"Terça-feira. Bife enrolado ao molho com batata, cenoura, bacon e calabresa cortados.\nAcompanha arroz, feijão, purê de batata e salada.",{ days: [2] });
+item('pratos','Pratos do dia','Dobradinha',"Terça-feira. Bucho bovino, costelinha, calabresa e feijão branco.\nAcompanha arroz e salada.",[['Média',40],['Grande',55]],{days:[2]});
+item('pratos','Pratos do dia','Feijoada',"Quartas e sábados. Feijão com costelinha de porco, calabresa e carne seca.\nAcompanha arroz, couve, bisteca e torresmo.\nCaipirinha à parte.",[['Pequena',50],['Média',65],['Grande',85]],{days:[3,6]});
+fixed('pratos','Pratos do dia','Macarrão com galinha caipira',25,"Quinta-feira. Macarrão à bolonhesa ou alho e óleo.\nAcompanha galinha caipira ao molho e batata cozida.",{ days: [4] });
+fixed('pratos','Pratos do dia','Frango assado',25,"Quinta-feira. Acompanha arroz, feijão, fritas e salada.\nPara trocar por macarrão, avise ao fazer o pedido.",{ days: [4] });
+fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-feira. Tilápia ou merluza à milanesa, coberta com molho de camarão.\nAcompanha arroz, feijão, purê de batata e salada.",{ days: [5] });
+item('pratos','Pratos do dia','Bacalhau',"Sexta-feira. Bacalhau em postas com leguminosas.\nAcompanha arroz, feijão e salada.\nVerifique a disponibilidade no dia.",[['Pequeno',45],['Grande',90]],{days:[5]});
+item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Arroz, carne seca desfiada, queijo coalho e torresmo.\nAcompanha bisteca ou costela.",[['Pequeno',70],['Grande',95]],{days:[0]});
 [
  ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],
 ].forEach(([n,p])=>fixed('pratos','Pratos comerciais',n,p));
 fixed('pratos','Pratos comerciais','Espaguete',25);
+fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra filé',30);
 fixed('pratos','Pratos executivos','Rabada',35);
-fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra a cavalo',40,'2 ovos, arroz, feijão, fritas e salada.');
-fixed('pratos','Pratos executivos','Cubana',40,'Banana à milanesa, palmito refogado na manteiga, ervilha, bacon, arroz, fritas e presunto.');
-item('pratos','Pratos executivos','Parmegiana','Carne ou frango. Acompanha arroz e fritas.',[['Pequena',70],['Grande',90]],{choices:['Carne','Frango']});
+fixed('pratos','Pratos executivos','Cubana',40,"Banana à milanesa, palmito refogado na manteiga, ervilha, bacon e presunto.\nAcompanha arroz e fritas.");
+item('pratos','Pratos executivos','Parmegiana',"Carne ou frango.\nAcompanha arroz e fritas.",[['Pequena',70],['Grande',90]],{choices:['Carne','Frango']});
 item('pratos','Pratos executivos','Filé de tilápia','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de merluza','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande',120]]);
