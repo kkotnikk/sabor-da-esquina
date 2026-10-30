@@ -27,6 +27,18 @@ function priceHTML(product) {
   }).join('');
 }
 
+const weekdayNames = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+function dishDay(product) {
+  return product.group === 'Pratos do dia' && product.days?.length
+    ? product.days.map(day => weekdayNames[day]).join(' e ')
+    : '';
+}
+function dishDescription(product) {
+  return dishDay(product)
+    ? product.description.replace(/^(?:Segunda-feira|Terça-feira|Quarta-feira|Quinta-feira|Sexta-feira|Quartas e sábados|Aos domingos)\.\s*/i, '')
+    : product.description;
+}
+
 function renderMenu() {
   const result = filterMenu(category, query);
   const current = categories.find(item => item.id === category);
@@ -41,7 +53,7 @@ function renderMenu() {
   $('no-results').hidden = result.length > 0;
   $('result-status').textContent = `${result.length} ${result.length === 1 ? 'item encontrado' : 'itens encontrados'}.`;
   $('categories').querySelectorAll('[data-category]').forEach(button => button.setAttribute('aria-pressed', String(!query && button.dataset.category === category)));
-  $('menu-items').innerHTML = groups.map(group => `<section class="menu-group" aria-label="${escape(group)}">${showGroupTitle ? `<h3 class="group-title"><span>${escape(group)}</span></h3>` : ''}<div class="menu-grid">${result.filter(item => item.group === group).map(item => `<article class="menu-item" aria-labelledby="name-${item.id}"><div class="item-copy">${query ? `<p class="item-context">${escape(categories.find(entry => entry.id === item.category).name)} · ${escape(item.group)}</p>` : ''}<${itemTag} id="name-${item.id}" class="item-name">${escape(item.name)}</${itemTag}>${item.description ? `<p class="item-description${item.advanceOrder ? ' item-order-notice' : ''}">${escape(item.description)}</p>` : ''}</div><div class="item-prices">${priceHTML(item)}</div></article>`).join('')}</div></section>`).join('');
+  $('menu-items').innerHTML = groups.map(group => `<section class="menu-group" aria-label="${escape(group)}">${showGroupTitle ? `<h3 class="group-title"><span>${escape(group)}</span></h3>` : ''}<div class="menu-grid">${result.filter(item => item.group === group).map(item => `<article class="menu-item" aria-labelledby="name-${item.id}"><div class="item-copy">${query ? `<p class="item-context">${escape(categories.find(entry => entry.id === item.category).name)} · ${escape(item.group)}</p>` : ''}<div class="item-title-row"><${itemTag} id="name-${item.id}" class="item-name">${escape(item.name)}</${itemTag}>${dishDay(item) ? `<span class="item-weekday">${escape(dishDay(item))}</span>` : ''}</div>${dishDescription(item) ? `<p class="item-description${item.advanceOrder ? ' item-order-notice' : ''}">${escape(dishDescription(item))}</p>` : ''}</div><div class="item-prices">${priceHTML(item)}</div></article>`).join('')}</div></section>`).join('');
 }
 
 $('categories').addEventListener('click', event => {
