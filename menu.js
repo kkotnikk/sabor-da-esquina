@@ -89,9 +89,15 @@ fixed('pratos','Pratos do dia','Frango assado',25,"Quinta-feira. Acompanha arroz
 fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-feira. Tilápia ou merluza à milanesa, coberta com molho de camarão.\nAcompanha arroz, feijão, purê de batata e salada.",{ days: [5] });
 item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Arroz, carne seca desfiada, queijo coalho e torresmo.\nAcompanha bisteca ou costela.",[['Pequeno',70],['Grande',95]],{days:[0]});
 [
- ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],
-].forEach(([n,p])=>fixed('pratos','Pratos comerciais',n,p));
-fixed('pratos','Pratos comerciais','Espaguete',25);
+ ["Calabresa",25,"Acompanha arroz, feijão, fritas e salada."],
+ ["Bisteca",25,""],
+ ["Costela",25,"Costela ao molho com batata cozida.\nAcompanha arroz, feijão e salada."],
+ ["Fígado",25,"Acompanha arroz, feijão, fritas e salada."],
+ ["Galinha caipira",25,"Galinha caipira ao molho com batata cozida.\nAcompanha arroz, feijão e salada."],
+ ["Filé de frango",25,"Acompanha arroz, feijão, fritas e salada."],
+ ["Picadinho",25,"Carne de panela com batata e cenoura.\nAcompanha arroz, feijão e salada."],
+ ["Espaguete",25,"À bolonhesa ou alho e óleo.\nAcompanhamentos à escolha; o preço pode variar."],
+].forEach(([n,p,d])=>fixed('pratos','Pratos comerciais',n,p,d));
 fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra filé',30);
 fixed('pratos','Pratos executivos','Rabada',35);
