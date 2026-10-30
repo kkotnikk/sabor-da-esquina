@@ -1,4 +1,4 @@
-import { categories, money, filterMenu } from './menu.js?v=20261027-1403';
+import { categories, money, filterMenu } from './menu.js?v=20261030-1806';
 
 const $ = id => document.getElementById(id);
 const escape = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
