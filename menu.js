@@ -98,7 +98,7 @@ item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Arroz, carne seca 
  ["Picadinho",25,"Carne de panela com batata e cenoura.\nAcompanha arroz, feijão e salada."],
  ["Espaguete",25,"À bolonhesa ou alho e óleo.\nAcompanhamentos à escolha; o preço pode variar."],
 ].forEach(([n,p,d])=>fixed('pratos','Pratos comerciais',n,p,d));
-fixed('pratos','Pratos executivos','Carne assada',30);
+fixed('pratos','Pratos executivos','Carne assada (Cupim)',30,'Acompanha arroz, feijão, fritas e salada.');
 fixed('pratos','Pratos executivos','Contra filé',30,"Acompanha arroz, feijão, fritas e salada.");
 fixed('pratos','Pratos executivos','Rabada',35,"Rabada ao molho.\nAcompanha arroz, feijão e salada.");
 fixed('pratos','Pratos executivos','Contra a cavalo',40,"Contrafilé com 2 ovos.\nAcompanha arroz, feijão, fritas e salada.");
@@ -139,7 +139,7 @@ item('caldos','Caldos','Mocotó em pedaço','',[['Porção',35]]);
  ["X-egg",20,"Hambúrguer, ovo, maionese, queijo prato, alface e tomate."],
  ["X-salada",20,"Hambúrguer, maionese, queijo prato, alface e tomate."],
  ["X-tudo",30,"Hambúrguer, maionese, queijo prato, presunto, ovo, calabresa fatiada, bacon, alface e tomate."],
- ["X-churrasco",30,"Pão francês e vinagrete (tomate e cebola)."],
+ ["X-churrasco",30,"Pão francês, contrafilé cortado, queijo, maionese e vinagrete (tomate e cebola)."],
 ].forEach(([n,p,d])=>item('lanches','Lanches',n,d,[['Unidade',p]]));
 item('bebidas','Bebidas','Bebidas em geral','Refrigerantes, sucos, cervejas e destilados. Consulte as opções, tamanhos e valores.',[['Consultar',null]]);
 
