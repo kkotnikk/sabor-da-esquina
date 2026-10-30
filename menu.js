@@ -92,7 +92,7 @@ item('pratos','Pratos do dia','Baião de dois','Aos domingos. Acompanha costela 
 [
  ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],['Contra filé',30],['Rabada',35],
 ].forEach(([n,p])=>fixed('pratos','Pratos comerciais',n,p));
-fixed('pratos','Pratos executivos','Espaguete',25);
+fixed('pratos','Pratos comerciais','Espaguete',25);
 fixed('pratos','Pratos executivos','Carne assada',30);
 fixed('pratos','Pratos executivos','Contra a cavalo',40,'2 ovos, arroz, feijão, fritas e salada.');
 fixed('pratos','Pratos executivos','Cubana',40,'Banana à milanesa, palmito refogado na manteiga, ervilha, bacon, arroz, fritas e presunto.');
