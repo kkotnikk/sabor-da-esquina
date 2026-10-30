@@ -87,7 +87,6 @@ item('pratos','Pratos do dia','Feijoada',"Quartas e sábados. Feijão com costel
 fixed('pratos','Pratos do dia','Macarrão com galinha caipira',25,"Quinta-feira. Macarrão à bolonhesa ou alho e óleo.\nAcompanha galinha caipira ao molho e batata cozida.",{ days: [4] });
 fixed('pratos','Pratos do dia','Frango assado',25,"Quinta-feira. Acompanha arroz, feijão, fritas e salada.\nPara trocar por macarrão, avise ao fazer o pedido.",{ days: [4] });
 fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-feira. Tilápia ou merluza à milanesa, coberta com molho de camarão.\nAcompanha arroz, feijão, purê de batata e salada.",{ days: [5] });
-item('pratos','Pratos do dia','Bacalhau',"Sexta-feira. Bacalhau em postas com leguminosas.\nAcompanha arroz, feijão e salada.\nVerifique a disponibilidade no dia.",[['Pequeno',45],['Grande',90]],{days:[5]});
 item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Arroz, carne seca desfiada, queijo coalho e torresmo.\nAcompanha bisteca ou costela.",[['Pequeno',70],['Grande',95]],{days:[0]});
 [
  ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],
@@ -99,6 +98,7 @@ fixed('pratos','Pratos executivos','Rabada',35);
 fixed('pratos','Pratos executivos','Contra a cavalo',40,'2 ovos, arroz, feijão, fritas e salada.');
 fixed('pratos','Pratos executivos','Cubana',40,"Banana à milanesa, palmito refogado na manteiga, ervilha, bacon e presunto.\nAcompanha arroz e fritas.");
 item('pratos','Pratos executivos','Parmegiana',"Carne ou frango.\nAcompanha arroz e fritas.",[['Pequena',70],['Grande',90]],{choices:['Carne','Frango']});
+item('pratos','Pratos executivos','Bacalhau',"Sexta-feira. Bacalhau em postas com leguminosas.\nAcompanha arroz, feijão e salada.\nVerifique a disponibilidade no dia.",[['Pequeno',45],['Grande',90]],{days:[5]});
 item('pratos','Pratos executivos','Filé de tilápia','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Filé de merluza','',[['Pequeno',45],['Grande',90]]);
 item('pratos','Pratos executivos','Moqueca de peixe','',[['Pequena',60],['Grande',120]]);
