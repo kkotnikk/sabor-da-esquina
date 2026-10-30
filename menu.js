@@ -86,9 +86,9 @@ item('pratos','Pratos do dia','Dobradinha',"Terça-feira. Calabresa, bucho bovin
 item('pratos','Pratos do dia','Feijoada',"Quartas e sábados. Acompanha arroz, couve, bisteca e torresmo. Feijão com costelinha de porco, calabresa e carne seca. Caipirinha pedida à parte.",[['Pequena',50],['Média',65],['Grande',85]],{days:[3,6]});
 fixed('pratos','Pratos do dia','Macarrão com galinha caipira',25,"Quinta-feira. Macarrão à bolonhesa ou alho e óleo, com galinha caipira ao molho e batata cozida.",{ days: [4] });
 fixed('pratos','Pratos do dia','Frango assado',25,"Quinta-feira. Acompanha arroz, feijão, fritas e salada. Para trocar por macarrão, avise ao fazer o pedido.",{ days: [4] });
-fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-feira. Tilápia ou merluza.",{ days: [5] });
-item('pratos','Pratos do dia','Bacalhau','Sexta-feira. Consultar se disponível.',[['Pequeno',45],['Grande',90]],{days:[5]});
-item('pratos','Pratos do dia','Baião de dois','Aos domingos. Acompanha costela ou bisteca.',[['Pequeno',70],['Grande',95]],{days:[0]});
+fixed('pratos','Pratos do dia','Filé de peixe ao molho de camarão',45,"Sexta-feira. Tilápia ou merluza à milanesa, coberta com molho de camarão. Acompanha purê de batata, arroz, feijão e salada.",{ days: [5] });
+item('pratos','Pratos do dia','Bacalhau',"Sexta-feira. Verificar no dia a disponibilidade. Bacalhau em postas com leguminosas. Acompanha arroz, feijão e salada.",[['Pequeno',45],['Grande',90]],{days:[5]});
+item('pratos','Pratos do dia','Baião de dois',"Aos domingos. Carne seca desfiada, torresmo, queijo coalho e arroz. Acompanha bisteca ou costela.",[['Pequeno',70],['Grande',95]],{days:[0]});
 [
  ['Calabresa',25],['Bisteca',25],['Costela',25],['Fígado',25],['Galinha',25],['Filé de frango',25],['Picadinho',25],
 ].forEach(([n,p])=>fixed('pratos','Pratos comerciais',n,p));
