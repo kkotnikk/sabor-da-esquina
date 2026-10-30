@@ -117,10 +117,10 @@ item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]])
  ['Porquinho',65],['Salame',50],['Filé de tilápia',65],['Provolone à milanesa',85],['Camarão à milanesa',90],['Picanha',100],
  ['Carne seca com mandioca',90],['Bolinho de costela · 6 unidades',30],['Tripa',30],['Torresmo',50],['Fritas com cheddar e bacon',65],
 ].forEach(([n,p,d=''])=>item('porcoes','Porções',n,d,[['Porção',p]]));
-item('caldos','Caldos','Mocotó',"Somente o caldo do mocotó.\nPão à parte.",[['Pequeno',20],['Grande',30]]);
-item('caldos','Caldos','Verde',"Calabresa, bacon, couve e espinafre.\nPão à parte.",[['Pequeno',20],['Grande',30]]);
-item('caldos','Caldos','Sururu',"Mexilhão (frutos do mar) e temperos.\nPão à parte.",[['Pequeno',20],['Grande',35]]);
-item('caldos','Caldos','Mocotó em pedaço',"Pedaços de mocotó com caldo.\nPão à parte.",[['Porção',35]]);
+item('caldos','Caldos','Mocotó',"Somente o caldo do mocotó.\nPão.",[['Pequeno',20],['Grande',30]]);
+item('caldos','Caldos','Verde',"Calabresa, bacon, couve e espinafre.\nPão.",[['Pequeno',20],['Grande',30]]);
+item('caldos','Caldos','Sururu',"Mexilhão (frutos do mar) e temperos.\nPão.",[['Pequeno',20],['Grande',35]]);
+item('caldos','Caldos','Mocotó em pedaço',"Pedaços de mocotó com caldo.\nPão.",[['Porção',35]]);
 [
  ["Calabresa",40,"Alface, tomate, maionese, queijo prato, presunto e ovo, com calabresa fatiada."],
  ["Contra filé",65,"Alface, tomate, maionese, queijo prato, presunto e ovo, com contrafilé cortado."],
