@@ -133,7 +133,7 @@ item('pratos','Pratos promocionais','Linguiça com ovo','',[['Consultar',null]])
  ["Bolinho de costela · 6 unidades",30,"Bolinhos à milanesa, fritos.\nAcompanham molho da casa."],
  ["Tripa",30,"Tripas cortadas e fritas."],
  ["Torresmo",50,"5 unidades cortadas, com limão."],
- ["Fritas com cheddar e bacon",65,""],
+ ["Fritas com cheddar e bacon",65,"Porção de batata com cheddar e bacon."],
 ].forEach(([n,p,d=''])=>item('porcoes','Porções',n,d,[['Porção',p]]));
 item('caldos','Caldos','Mocotó',"Somente o caldo do mocotó.\nPão.",[['Pequeno',20],['Grande',30]]);
 item('caldos','Caldos','Verde',"Calabresa, bacon, couve e espinafre.\nPão.",[['Pequeno',20],['Grande',30]]);
